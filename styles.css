@@ -54,6 +54,8 @@ body {
   padding: 3% 3% 20px 3%;
 }
 .grid-container {
+  margin: 0 auto;
+  max-width: 1920px;
   display: grid;
   grid-template-columns: 5fr 2fr;
   grid-template-areas: "input output"
@@ -125,6 +127,7 @@ body {
 }
 
 .textarea-bottom-container {
+  text-align: center;
   margin: 30px 0;
 }
 
