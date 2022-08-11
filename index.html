@@ -21,6 +21,7 @@
             <textarea
               id="textarea-input"
               placeholder="Ingrese el texto aqui"
+              type="text"
             ></textarea>
             <div class="textarea-bottom-container">
               <div>
@@ -50,14 +51,26 @@
                 <h4>Ingresa el texto que desees encriptar o desencriptar.</h4>
               </div>
             </div>
-            <div class="response-container">
+            <div class="response-container hidden">
               <div>
                 <div id="text-output"><h2></h2></div>
+              </div>
+              <div class="copy-btn-container">
+                <button class="btn copiar" >Copiar</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div id="modal-alerta" class="hidden">
+        <div><img
+                    src="./assets/icon-alert.svg"
+                    alt="icono de alerta"
+                    class="icon-alert"
+                    /></div>
+                    <div><h2>Texto invalido</h2></div>
+                    
     </div>
     <script src="./script.js"></script>
   </body>
