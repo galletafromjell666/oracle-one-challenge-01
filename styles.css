@@ -58,7 +58,6 @@ body {
   max-height: auto;
   background-color: var(--main-bg-color);
   padding: 3% 3% 20px 3%;
-  position: relative;
 }
 
 #modal-alerta {
@@ -85,12 +84,13 @@ body {
   margin: 0 10px;
   vertical-align: text-bottom;
 }
+
 .grid-container {
   margin: 0 auto;
   max-width: 1920px;
   display: grid;
   grid-template-columns: 5fr 2fr;
-  grid-template-rows: 90vh;
+  grid-template-rows: 80vh;
   grid-template-areas: "input output";
 }
 .textarea-container {
@@ -104,6 +104,7 @@ body {
   justify-content: center;
   height: 100%;
 }
+
 
 .textarea-main-container {
   position: relative;
@@ -152,11 +153,16 @@ textarea {
   outline: none;
 }
 
+#text-output{
+  height: 80%;
+}
+
 #textarea-output {
   background: transparent;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   font-size: 1.8rem;
+  overflow: auto;
 }
 
 #textarea-input {
@@ -272,6 +278,11 @@ textarea {
 
 @media only screen and (max-width: 768px) {
   .main-container {
+      position: relative;
+  width: 100vw;
+  height: auto;
+  
+    
     padding: 5%;
   }
   .grid-container {
@@ -283,7 +294,8 @@ textarea {
   }
 
   .output-container {
-    margin-top: 3%;
+    margin-top: 10%;
+    height: auto;
   }
   .output {
     width: 100%;
